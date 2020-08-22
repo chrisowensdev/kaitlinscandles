@@ -1,201 +1,94 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title></title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" href="css/index.css" />
-    </head>
 
-    <body>
-        <header>
-            <img
-                src="https://kaitlinscandles.com/Pictures/headerlogo.png"
-                alt="logo"
-            />
-            <nav>
-                <ul>
-                    <li>About</li>
-                    <li>Contact</li>
-                </ul>
-            </nav>
-        </header>
-        <div id="collection-component-1597595436230"></div>
-        <script type="text/javascript">
-            /*<![CDATA[*/
-            (function () {
-                var scriptURL =
-                    'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
-                if (window.ShopifyBuy) {
-                    if (window.ShopifyBuy.UI) {
-                        ShopifyBuyInit();
-                    } else {
-                        loadScript();
-                    }
-                } else {
-                    loadScript();
-                }
-                function loadScript() {
-                    var script = document.createElement('script');
-                    script.async = true;
-                    script.src = scriptURL;
-                    (
-                        document.getElementsByTagName('head')[0] ||
-                        document.getElementsByTagName('body')[0]
-                    ).appendChild(script);
-                    script.onload = ShopifyBuyInit;
-                }
-                function ShopifyBuyInit() {
-                    var client = ShopifyBuy.buildClient({
-                        domain: 'kaitlins-candles.myshopify.com',
-                        storefrontAccessToken:
-                            '3405009d11c0434db676f75184b94059',
-                    });
-                    ShopifyBuy.UI.onReady(client).then(function (ui) {
-                        ui.createComponent('collection', {
-                            id: '213147779238',
-                            node: document.getElementById(
-                                'collection-component-1597595436230'
-                            ),
-                            moneyFormat: '%24%7B%7Bamount%7D%7D',
-                            options: {
-                                product: {
-                                    styles: {
-                                        product: {
-                                            '@media (min-width: 601px)': {
-                                                'max-width': 'calc(25% - 20px)',
-                                                'margin-left': '20px',
-                                                'margin-bottom': '50px',
-                                                width: 'calc(25% - 20px)',
-                                            },
-                                            img: {
-                                                height: 'calc(100% - 15px)',
-                                                position: 'absolute',
-                                                left: '0',
-                                                right: '0',
-                                                top: '0',
-                                            },
-                                            imgWrapper: {
-                                                'padding-top':
-                                                    'calc(75% + 15px)',
-                                                position: 'relative',
-                                                height: '0',
-                                            },
-                                        },
-                                        button: {
-                                            'font-size': '14px',
-                                            'padding-top': '15px',
-                                            'padding-bottom': '15px',
-                                            ':hover': {
-                                                'background-color': '#a15679',
-                                            },
-                                            'background-color': '#b35f86',
-                                            ':focus': {
-                                                'background-color': '#a15679',
-                                            },
-                                        },
-                                        quantityInput: {
-                                            'font-size': '14px',
-                                            'padding-top': '15px',
-                                            'padding-bottom': '15px',
-                                        },
-                                    },
-                                    contents: {
-                                        button: false,
-                                        buttonWithQuantity: true,
-                                    },
-                                    text: {
-                                        button: 'Add to cart',
-                                    },
-                                },
-                                productSet: {
-                                    styles: {
-                                        products: {
-                                            '@media (min-width: 601px)': {
-                                                'margin-left': '-20px',
-                                            },
-                                        },
-                                    },
-                                },
-                                modalProduct: {
-                                    contents: {
-                                        img: false,
-                                        imgWithCarousel: true,
-                                        button: false,
-                                        buttonWithQuantity: true,
-                                    },
-                                    styles: {
-                                        product: {
-                                            '@media (min-width: 601px)': {
-                                                'max-width': '100%',
-                                                'margin-left': '0px',
-                                                'margin-bottom': '0px',
-                                            },
-                                        },
-                                        button: {
-                                            'font-size': '14px',
-                                            'padding-top': '15px',
-                                            'padding-bottom': '15px',
-                                            ':hover': {
-                                                'background-color': '#a15679',
-                                            },
-                                            'background-color': '#b35f86',
-                                            ':focus': {
-                                                'background-color': '#a15679',
-                                            },
-                                        },
-                                        quantityInput: {
-                                            'font-size': '14px',
-                                            'padding-top': '15px',
-                                            'padding-bottom': '15px',
-                                        },
-                                    },
-                                    text: {
-                                        button: 'Add to cart',
-                                    },
-                                },
-                                cart: {
-                                    styles: {
-                                        button: {
-                                            'font-size': '14px',
-                                            'padding-top': '15px',
-                                            'padding-bottom': '15px',
-                                            ':hover': {
-                                                'background-color': '#a15679',
-                                            },
-                                            'background-color': '#b35f86',
-                                            ':focus': {
-                                                'background-color': '#a15679',
-                                            },
-                                        },
-                                    },
-                                    text: {
-                                        total: 'Subtotal',
-                                        button: 'Checkout',
-                                    },
-                                    popup: false,
-                                },
-                                toggle: {
-                                    styles: {
-                                        toggle: {
-                                            'background-color': '#b35f86',
-                                            ':hover': {
-                                                'background-color': '#a15679',
-                                            },
-                                            ':focus': {
-                                                'background-color': '#a15679',
-                                            },
-                                        },
-                                        count: {
-                                            'font-size': '14px',
-                                        },
-                                    },
-                                },
-                            },
-                        });
-                    });
-                }
-            })();
-            /*]]>*/
-        </script>
-    </body>
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css" />
+</head>
+
+<body>
+    <header>
+        <img src="https://kaitlinscandles.com/Pictures/headerlogo.png" alt="logo" />
+        <nav class="nav-bar">
+            <ul class="nav-list">
+                <li class="list-item">
+                    <a href="candles.html">Candles</a>
+                    <ul class="candle-list">
+                        <li class="list-item"><a href="4oz.html">4oz</a></li>
+                        <li class="list-item"><a href="9oz.html">9oz</a></li>
+                        <li class="list-item"><a href="16oz.html">16oz</a></li>
+                    </ul>
+                </li>
+
+                <li class="list-item"><a href="coasters.html">Coasters</a></li>
+                <li class="list-item"><a href="waxmelts.html">Waxmelts</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <div class="collections">
+        <h1>Candles</h1>
+        <div class="candles-main collection">
+            <p class="most-popular">Most Popular</p>
+            <div class="product-container">
+
+                <h3><a href="9oz.html">Hand-painted 9oz Soy</a></h3>
+                <div class="product" id='product-component-1598119771299'></div>
+                <a href="9oz.html" class="view-more-link">View More...</a>
+            </div>
+            <div class="product-container">
+
+                <h3><a href="16oz.html">Country Comfort 16oz Soy</a></h3>
+                <div class="product" id='product-component-1598120993929'></div>
+                <a href="16oz.html" class="view-more-link">View More...</a>
+            </div>
+            <div class="product-container">
+
+                <h3><a href="4oz.html">Jelly Jars 4oz Soy</a></h3>
+                <div class="product" id='product-component-1598121718734'></div>
+                <a href="4oz.html" class="view-more-link">View More...</a>
+            </div>
+
+        </div>
+        <hr>
+        <h1>Wax Melts</h1>
+        <div class="waxmelts-main collection">
+            <p class="most-popular">Most Popular</p>
+            <div class="product-container">
+                <div class="product" id='product-component-1598122499088'></div>
+                <a href="waxmelts.html" class="view-more-link">View More...</a>
+            </div>
+            <div class="product-container">
+                <div class="product" id='product-component-1598122639370'></div>
+                <a href="waxmelts.html" class="view-more-link">View More...</a>
+            </div>
+        </div>
+        <hr>
+        <h1>Coasters</h1>
+        <div class="coasters-main collection">
+            <p class="most-popular">Most Popular</p>
+            <div class="product-container">
+                <div class="product" id='product-component-1598122915265'></div>
+                <a href="coasters.html" class="view-more-link">View More...</a>
+            </div>
+            <div class="product-container">
+                <div class="product" id='product-component-1598123012508'></div>
+                <a href="coasters.html" class="view-more-link">View More...</a>
+            </div>
+            <div class="product-container">
+                <div class="product" id='product-component-1598123085070'></div>
+                <a href="coasters.html" class="view-more-link">View More...</a>
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+    <script src="scripts/main-product.js"></script>
+</body>
+
 </html>

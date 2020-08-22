@@ -12,6 +12,7 @@ body {
     font-size: 1rem;
     margin: 0;
     padding: 0;
+    font-family: 'Montserrat', sans-serif;
 }
 
 header {
@@ -24,7 +25,91 @@ header img {
     height: 50px;
 }
 
+/* Navigation */
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 10px;
+    justify-content: center;
+}
+
+.list-item {
+    width: 100px;
+    list-style-type: none;
+}
+
+.list-item a {
+    text-decoration: none;
+    color: white;
+}
+
+.candle-list {
+}
+
+.candle-list .list-item {
+    display: none;
+}
+
+/* Main */
+
+/*  Collections */
+.collections h1 {
+    text-align: center;
+}
+
+.most-popular {
+    margin-left: 20px;
+}
+
 .collection-container {
     width: 80%;
     margin: 0 auto;
+}
+
+.collection-container a {
+    text-decoration: none;
+}
+
+.collection {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    padding-top: 30px;
+}
+
+.most-popular {
+    position: absolute;
+    top: 0;
+}
+
+.product-container {
+    position: relative;
+    width: 350px;
+    height: 550px;
+    margin: 0 auto 20px;
+}
+
+.product-container h3 {
+    text-align: center;
+    background-color: #b35f86;
+    padding: 5px 0;
+}
+
+.product-container h3 a {
+    text-decoration: none;
+    color: white;
+}
+
+.product {
+    margin: 30px auto;
+}
+
+.view-more-link {
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-decoration: none;
+    color: #b35f86;
 }
