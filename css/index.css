@@ -28,15 +28,24 @@ header img {
 /* Navigation */
 
 .nav-list {
+    border-top: 1px solid white;
     display: flex;
     flex-direction: row;
-    padding-bottom: 10px;
+    padding: 0;
     justify-content: center;
+    margin-top: 30px;
 }
 
 .list-item {
-    width: 100px;
+    width: 150px;
     list-style-type: none;
+    position: relative;
+    text-align: center;
+    padding: 5px 30px;
+}
+
+.list-item:hover {
+    background-color: lightpink;
 }
 
 .list-item a {
@@ -44,11 +53,27 @@ header img {
     color: white;
 }
 
-.candle-list {
+.nav-list .candle-list {
+    width: 150px;
+    padding: 0;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    display: none;
+    background-color: #b35f86;
+    border: 1px solid black;
 }
 
 .candle-list .list-item {
-    display: none;
+    width: 100%;
+    text-align: center;
+    padding: 5px 18px;
+}
+
+
+
+.dropdown:hover .candle-list {
+    display: block;
 }
 
 /* Main */
