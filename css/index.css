@@ -13,3 +13,18 @@ body {
     margin: 0;
     padding: 0;
 }
+
+header {
+    background-color: #b35f86;
+}
+
+header img {
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 50px;
+}
+
+.collection-container {
+    width: 80%;
+    margin: 0 auto;
+}
