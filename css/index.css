@@ -101,6 +101,7 @@ header img {
     flex-wrap: wrap;
     position: relative;
     padding-top: 30px;
+    justify-content: center;
 }
 
 .most-popular {
@@ -112,7 +113,7 @@ header img {
     position: relative;
     width: 350px;
     height: 550px;
-    margin: 0 auto 20px;
+    margin: 0 10px;
 }
 
 .product-container h3 {
@@ -137,4 +138,22 @@ header img {
     right: 0;
     text-decoration: none;
     color: #b35f86;
+}
+
+@media screen and (max-width: 700px) {
+    header {
+        text-align: center;
+    }
+
+    .list-item {
+        padding: 5px 10px;
+    }
+
+
+}
+
+@media screen and (max-width: 415px) {
+    .detail-category {
+        display: none;
+    }
 }
